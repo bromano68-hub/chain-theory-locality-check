@@ -1,0 +1,36 @@
+=== qudit dimension d = 2  (join genre (2,2)) ===
+long join                    | measure Z | measure X |     reset |    rotate | verdict
+-----------------------------------------------------------------------------------------------
+none                         |    0.0000 |    0.0000 |    0.0000 |    0.0000 | no signal
+Bell, all outcomes           |    0.0000 |    0.0000 |    0.0000 |    0.0000 | no signal
+Bell, outcome at Bob         |    0.0000 |    0.0000 |    0.5000 |    0.0000 | SIGNAL
+pair or not, flag at Bob     |    0.0000 |    0.0000 |    0.3750 |    0.0000 | SIGNAL
+swap                         |    0.0000 |    0.0000 |    0.5000 |    0.0000 | SIGNAL
+Chance a link forms (pair-or-not): nothing: 0.2500, measure Z: 0.2500, measure X: 0.2500, reset: 0.2500, rotate: 0.2500   (1/d^2 = 0.2500)
+
+=== qudit dimension d = 3  (join genre (3,3)) ===
+long join                    | measure Z | measure X |     reset |    rotate | verdict
+-----------------------------------------------------------------------------------------------
+none                         |    0.0000 |    0.0000 |    0.0000 |    0.0000 | no signal
+Bell, all outcomes           |    0.0000 |    0.0000 |    0.0000 |    0.0000 | no signal
+Bell, outcome at Bob         |    0.0000 |    0.0000 |    0.6667 |    0.0000 | SIGNAL
+pair or not, flag at Bob     |    0.0000 |    0.0000 |    0.2694 |    0.0000 | SIGNAL
+swap                         |    0.0000 |    0.0000 |    0.6667 |    0.0000 | SIGNAL
+Chance a link forms (pair-or-not): nothing: 0.1111, measure Z: 0.1111, measure X: 0.1111, reset: 0.1111, rotate: 0.1111   (1/d^2 = 0.1111)
+
+=== qudit dimension d = 4  (join genre (4,4)) ===
+long join                    | measure Z | measure X |     reset |    rotate | verdict
+-----------------------------------------------------------------------------------------------
+none                         |    0.0000 |    0.0000 |    0.0000 |    0.0000 | no signal
+Bell, all outcomes           |    0.0000 |    0.0000 |    0.0000 |    0.0000 | no signal
+Bell, outcome at Bob         |    0.0000 |    0.0000 |    0.7500 |    0.0000 | SIGNAL
+pair or not, flag at Bob     |    0.0000 |    0.0000 |    0.1875 |    0.0000 | SIGNAL
+swap                         |    0.0000 |    0.0000 |    0.7500 |    0.0000 | SIGNAL
+Chance a link forms (pair-or-not): nothing: 0.0625, measure Z: 0.0625, measure X: 0.0625, reset: 0.0625, rotate: 0.0625   (1/d^2 = 0.0625)
+
+=== General check (d = 2, 300 random cases each) ===
+Alice's separate (axiom kept)  : A's state off maximally mixed by up to 0.0000; Bob's best signal up to 0.0000
+    cases with A exactly maximally mixed: 300, max signal 5.00e-16
+Alice's joint (axiom broken)   : A's state off maximally mixed by up to 0.4998; Bob's best signal up to 0.4998
+    signal vs how far A is from maximally mixed: correlation +1.000
+Random two-end unitary joins, Alice keeps the axiom: max signal 5.90e-16

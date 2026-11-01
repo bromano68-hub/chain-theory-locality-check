@@ -1,0 +1,40 @@
+E4 large run: 3000 paired trials x 60 moves, 2 workers
+  worker 1: 100/1500 pairs, 85s
+  worker 0: 100/1500 pairs, 87s
+  worker 1: 200/1500 pairs, 171s
+  worker 0: 200/1500 pairs, 171s
+  worker 0: 300/1500 pairs, 260s
+  worker 1: 300/1500 pairs, 262s
+  worker 0: 400/1500 pairs, 351s
+  worker 1: 400/1500 pairs, 354s
+  worker 0: 500/1500 pairs, 460s
+  worker 1: 500/1500 pairs, 462s
+  worker 0: 600/1500 pairs, 555s
+  worker 1: 600/1500 pairs, 557s
+  worker 0: 700/1500 pairs, 651s
+  worker 1: 700/1500 pairs, 656s
+  worker 0: 800/1500 pairs, 749s
+  worker 1: 800/1500 pairs, 757s
+  worker 0: 900/1500 pairs, 843s
+  worker 1: 900/1500 pairs, 850s
+  worker 0: 1000/1500 pairs, 935s
+  worker 1: 1000/1500 pairs, 943s
+  worker 0: 1100/1500 pairs, 1026s
+  worker 1: 1100/1500 pairs, 1036s
+  worker 0: 1200/1500 pairs, 1118s
+  worker 1: 1200/1500 pairs, 1127s
+  worker 0: 1300/1500 pairs, 1214s
+  worker 1: 1300/1500 pairs, 1224s
+  worker 0: 1400/1500 pairs, 1307s
+  worker 1: 1400/1500 pairs, 1319s
+  worker 0: 1500/1500 pairs, 1398s
+  worker 1: 1500/1500 pairs, 1408s
+
+Done in 1408s
+
+Alice = electron read qubit a3; Bob = hydrogen qubit p.s1 (separate webs, no path)
+Each number: (Alice's slot OPEN) minus (Alice's slot FILLED), paired by seed
+
+  Expected direct Alice-Bob joins:         open 0.01140  closed 0.00060  difference +0.01080 +/- 0.00023  (+46.4 sigma)
+  Expected change in Bob's link count:     open +0.76492  closed +0.76963  difference -0.00470 +/- 0.01034  (-0.5 sigma)   [low-noise estimate]
+  Bob's final link count (one sample):     open 1.8130   closed 1.8100   difference +0.0030 +/- 0.0090  (+0.3 sigma)   [plain count]

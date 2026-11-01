@@ -1,0 +1,24 @@
+Seed: the author's 19 particle webs, 163 sites, 174 links, 19 webs, census [28, 28, 74, 21, 20, 3] (genres [(2, 2), (2, 3), (2, 4), (3, 3), (3, 4), (4, 4)])
+Port check:
+  Sink webs from Sinks.lean: genre census matches the recorded membership at 43 of 43
+  Forward move then some inverse of the same kind restores the web: 120 of 120
+
+E1/E2  Joins the author's rules admit, at the seed and as the web evolves
+ step | sites | webs | all moves | joins within | dist>=3 | mean dist | joins across
+--------------------------------------------------------------------------------------
+    0 |   163 |   19 |      1997 |           56 |     70% |       3.8 |         1588
+   50 |   171 |    2 |       653 |          299 |     97% |      15.6 |           50
+  100 |   174 |    1 |       560 |          251 |     97% |      10.0 |            0
+  200 |   183 |    1 |       661 |          322 |    100% |       9.4 |            0
+  400 |   198 |    2 |       773 |          350 |     99% |       8.3 |           54
+  'joins across' link two webs with no path between them at all.
+
+E3  Cause and effect: fill one free slot at Alice's site, run two copies with the
+    same draws, and see where the first difference appears
+  within + across joins (author's rules): effect appeared in 109/120 trials; in a DIFFERENT web in 103/109; same-web distances [1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4]...
+  within-web joins only                 : effect appeared in 23/120 trials; in a DIFFERENT web in 0/23; same-web distances [2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4]...
+
+E4  Control: Alice = electron read qubit a3, Bob = hydrogen qubit p.s1 (separate webs)
+    600 paired trials x 40 moves, uniform over all admitted moves of the 38 acts
+  Expected number of direct Alice-Bob joins: open slot 0.0104   closed slot 0.0004   (paired +22.8 sigma)
+  Bob's link count at the end (his local view): open 1.710   closed 1.733   (paired -0.8 sigma)

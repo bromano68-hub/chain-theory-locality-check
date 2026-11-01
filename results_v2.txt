@@ -1,0 +1,23 @@
+Seed web: 444 sites, 551 links, 1 components, spare valence 63
+  genre census: {(2, 2): 85, (2, 3): 34, (2, 4): 229, (3, 3): 134, (3, 4): 67, (4, 4): 2}  (draft: 22:85 23:34 24:229 33:134 34:67 44:2; spare valence 63)
+
+E1/E2  Admitted joins: how far apart are the two sites?
+ sites | admitted joins | same web | dist>=3 (same web) | mean dist | max dist
+--------------------------------------------------------------------------------
+   444 |           1341 |     100% |               100% |      11.5 |       17
+  1001 |           1046 |     100% |                99% |      14.6 |       39
+  2001 |           4243 |      97% |               100% |      16.4 |       43
+  4000 |           6550 |      99% |               100% |      15.9 |       50
+Draft's own count at its closures: 521 of 554 = 94% at distance 3-9.
+
+E3  Cone of influence: free one slot at an entry site, run two copies with
+    the same random draws, and see where the first difference appears
+  draft joins (no distance limit) : effect appeared in 127/150 trials, each created by a single move;
+                                    distance from cause: median 12, max 16 links; 127/127 beyond 2 links
+  local joins (radius 2)          : no difference appeared
+  Draft's own result: the rule adds a link outside its cone at the first step (I.4.1).
+
+E4  Control: 2000 paired trials, 30 spacetime joins (j2) each, Alice and Bob qubits >= 6 links apart
+  Bob ends up directly linked to Alice:   open slot 2.1%   closed slot 0.0%   (+6.5 sigma)
+  Alice-Bob (2,2) distance shrinks:        open slot 2.1%   closed slot 0.0%   (+6.5 sigma)
+  Bob's new links (his local view):        open slot 0.977   closed slot 1.000   (paired -6.9 sigma)
